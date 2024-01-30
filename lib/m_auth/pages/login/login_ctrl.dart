@@ -6,9 +6,20 @@ import 'login_events.dart';
 class LoginCtrl{
   AuthInteractors interactor;
 
-  LoginCtrl(this.interactor)
+  LoginCtrl(this.interactor);
 
-  void eventListener(LoginEvents type, [dynamic data] ){}
+  void eventListener(LoginEvents type, [dynamic data] ){
+    switch(type){
+      case LoginEvents.saisieNom:
+       break;
+      case LoginEvents.saisieMotDePasse:
+        break;
+      case LoginEvents.validation:
+        break;
+      case LoginEvents.soumission:
+        break;
+    }
+  }
   void _handleSaisieNom(){}
   void _handleSaisieMotDePasse(){}
   void _handleValidation(){}
