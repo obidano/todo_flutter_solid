@@ -17,7 +17,7 @@ class AuthInteractors{
 }
 
 @Riverpod(keepAlive: true)
-authInteractor(Ref ref){
+AuthInteractors authInteractor(Ref ref){
   var service= ref.watch(authServiceProvider);
   return AuthInteractors.build(service);
 }

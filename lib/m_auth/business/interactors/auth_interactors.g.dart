@@ -6,11 +6,11 @@ part of 'auth_interactors.dart';
 // RiverpodGenerator
 // **************************************************************************
 
-String _$authInteractorHash() => r'90aa954c4b829767ea8b61cd6b30a2ba557bab0e';
+String _$authInteractorHash() => r'd257c75943ac6ae86071bb47f7930b10a099746d';
 
 /// See also [authInteractor].
 @ProviderFor(authInteractor)
-final authInteractorProvider = Provider<Object?>.internal(
+final authInteractorProvider = Provider<AuthInteractors>.internal(
   authInteractor,
   name: r'authInteractorProvider',
   debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
@@ -20,6 +20,6 @@ final authInteractorProvider = Provider<Object?>.internal(
   allTransitiveDependencies: null,
 );
 
-typedef AuthInteractorRef = ProviderRef<Object?>;
+typedef AuthInteractorRef = ProviderRef<AuthInteractors>;
 // ignore_for_file: type=lint
 // ignore_for_file: subtype_of_sealed_class, invalid_use_of_internal_member, invalid_use_of_visible_for_testing_member
